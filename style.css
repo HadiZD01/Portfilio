@@ -330,6 +330,9 @@ body{
 .resau .site .icon i{
     font-size: 50px;
 }
+.ds{
+    font-size: 30px;
+}
 .info-user {
     color: #999;
     background-color: #eee;
@@ -340,11 +343,22 @@ body{
     position: absolute;
     left: 0;
 }
+.info-user a{
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    color: #383848;
+}
+.info-user a:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 40px;
+}
 .site .a{
     transform: translate(-35px,-90px) scale(0);
 }
 .site .b{
-    transform: translate(8px,-90px) scale(0);
+    transform: translate(5px,-90px) scale(0);
 }
 .site .c{
     transform: translate(65px,-90px) scale(0);
