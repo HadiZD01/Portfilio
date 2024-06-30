@@ -329,6 +329,7 @@ body{
 
 .resau .site .icon i{
     font-size: 50px;
+    float: right;
 }
 .info-user {
     color: #999;
@@ -344,6 +345,7 @@ body{
 .site{
     width: 50px;
     height: 50px;
+    margin-right: 5px;
 }
 .site:hover{
     width:50px;   
@@ -354,13 +356,28 @@ body{
     background-image: url(profile.jpg) ;
     background-size: contain;
     background-repeat: no-repeat;
+    opacity: 0;
     
 }
 
 .site:hover .info-user {
     transform: translateY(0) scale(1);
-    width: 125px;
-    
-
+    width: 140px;
+    margin-top: 55px;
   }
+
+
+.site .icon{
+    position: relative;
+}
+.site .insta img,.fb img ,.ds img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.site:hover img{
+    visibility: visible;
+}
 }
