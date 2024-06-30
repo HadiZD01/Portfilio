@@ -320,6 +320,7 @@ body{
 }
 .resau{
     display: flex;
+    
 }
 
 .resau .site .icon i{
@@ -333,13 +334,14 @@ body{
     box-shadow: 8px 8px 10px #ddd, -8px -8px 10px #fff;
     transform: translateY(-80px) scale(0);
     transition: all 0.5s;
+    
 }
 .site{
     width: 50px;
     height: 50px;
 }
 .site:hover{
-    width:150px;
+    width:50px;   
     
     
 }
@@ -347,11 +349,12 @@ body{
     background-image: url(profile.jpg) ;
     background-size: contain;
     background-repeat: no-repeat;
-    z-index: 100;
-    opacity: 100;
+    
 }
 
 .site:hover .info-user {
-    transform: translateY(0) scale(1)
+    transform: translateY(0) scale(1);
+    width: 120px;
+    
   }
 }
