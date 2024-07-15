@@ -130,7 +130,7 @@ body{
 
 
 
-.contact .container{
+/*.contact .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -176,7 +176,7 @@ body{
 .site:hover .info-user {
     transform: translateY(0) scale(1);
     width: 125px;
-  }
+  }*/
   span{
     color: blue;
   }
@@ -189,7 +189,94 @@ body{
     padding: 0.5rem 0;
     text-align: center;
 }
+.contact .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.resau{
+    display: flex;
+    position: relative;
+}
+
+.resau .site .icon i{
+    font-size: 50px;
+}
+.resau .site .ds i{
+    font-size: 42px;
+}
+.info-user {
+    color: #999;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 10px #ddd, -8px -8px 10px #fff;
+    transition: all 0.5s;
+    position: absolute;
+    left: 0;
+}
+.info-user a{
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    color: #383848;
+}
+.info-user a:hover{
+    color: white;
+    background-color: blue;
+    border-radius: 40px;
+}
+.site .a{
+    transform: translate(-35px,-90px) scale(0);
+}
+.site .b{
+    transform: translate(5px,-90px) scale(0);
+}
+.site .c{
+    transform: translate(65px,-90px) scale(0);
+}
+.site{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+.site:hover{
+    width:50px;   
+    
+    
+}
+.site .icon i:hover{
+    background-image: url(profile.jpg) ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    
+}
+
+.site:hover .info-user {
+    transform: translateY(5px) scale(1);
+    width: 140px;
+    
+  }
+
+
+.site .icon{
+    position: relative;
+}
+.site .insta img,.fb img ,.ds img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.site:hover img{
+    visibility: visible;
+}
 /*REs*/
+
 
 @media screen and (max-width:768px) {
     .home-page header nav ul li,.home-page header nav ul li a{
@@ -330,8 +417,8 @@ body{
 .resau .site .icon i{
     font-size: 50px;
 }
-.ds{
-    font-size: 30px;
+.resau .site .ds i{
+    font-size: 42px;
 }
 .info-user {
     color: #999;
